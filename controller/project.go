@@ -26,7 +26,7 @@ func CompileProject(c *fiber.Ctx) error {
 		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 	}
 
-	dir := "./projects/sample"
+	dir := "./workspace"
 	programDir := dir + "/programs/" + req.ProjectName
 	testDir := dir + "/tests/"
 
