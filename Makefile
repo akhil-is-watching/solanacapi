@@ -2,4 +2,4 @@ run:
 	go run main.go
 
 anchor-init:
-	anchor init workspace
+	anchor init anchor-workspace
