@@ -8,5 +8,5 @@ import (
 
 func SetupRoutes(app *fiber.App) {
 	app.Use(logger.New())
-	app.Post("/compile", controller.CompileProject)
+	app.Post("/test", controller.Test)
 }
